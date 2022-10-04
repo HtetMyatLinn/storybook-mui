@@ -1,0 +1,14 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import Pagination from "./index";
+
+<Meta title="Components/Pagination" component={Pagination} />
+
+export const PaginationComponent = (args) => <Pagination {...args} />;
+
+# Pagination Component
+
+The Pagination component enables the user to select a specific page from a range of pages.
+
+<Canvas>
+  <Story name="Pagination">{PaginationComponent.bind({})}</Story>
+</Canvas>

@@ -1,0 +1,30 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import Button from "./index";
+
+<Meta
+  title="Components/Button"
+  component={Button}
+  parameters={{
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/dJ8BHPSesaWwD77cBsx4EU/MUI-for-Figma-v5.9.0-(Community)-(Community)?node-id=4213%3A2103",
+    },
+  }}
+/>
+
+export const ButtonComponent = (args) => <Button {...args} />;
+
+# Button Component
+
+Buttons allow users to take actions, and make choices, with a single tap.
+
+Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
+
+- Modal windows
+- Forms
+- Cards
+- Toolbars
+
+<Canvas>
+  <Story name="Button">{ButtonComponent.bind({})}</Story>
+</Canvas>

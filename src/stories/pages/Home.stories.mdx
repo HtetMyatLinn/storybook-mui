@@ -1,0 +1,19 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import HomePage from "../../pages/index";
+
+<Meta
+  title="Pages/Home"
+  component={HomePage}
+  parameters={{
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/dJ8BHPSesaWwD77cBsx4EU/MUI-for-Figma-v5.9.0-(Community)-(Community)?node-id=4213%3A1335",
+    },
+  }}
+/>
+
+export const Home = (args) => <HomePage {...args} />;
+
+<Canvas>
+  <Story name="Home">{Home.bind({})}</Story>
+</Canvas>

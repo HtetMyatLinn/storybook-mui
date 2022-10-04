@@ -1,0 +1,14 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import RowCard from "./index";
+
+<Meta title="Components/RowCard" component={RowCard} />
+
+export const RowCardComponent = (args) => <RowCard {...args} />;
+
+# Pagination Component
+
+The Pagination component enables the user to select a specific page from a range of pages.
+
+<Canvas>
+  <Story name="RowCard">{RowCardComponent.bind({})}</Story>
+</Canvas>

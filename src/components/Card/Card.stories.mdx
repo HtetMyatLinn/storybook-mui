@@ -1,0 +1,25 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import Card from "./index";
+
+<Meta
+  title="Components/Card"
+  component={Card}
+  parameters={{
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/dJ8BHPSesaWwD77cBsx4EU/MUI-for-Figma-v5.9.0-(Community)-(Community)?node-id=4877%3A71567",
+    },
+  }}
+/>
+
+export const CardComponent = (args) => <Card {...args} />;
+
+# Card Component
+
+Cards contain content and actions about a single subject.
+Cards are surfaces that display content and actions on a single topic.
+They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+
+<Canvas>
+  <Story name="Card">{CardComponent.bind({})}</Story>
+</Canvas>
